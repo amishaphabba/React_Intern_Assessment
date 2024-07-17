@@ -1,0 +1,91 @@
+.main-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.player-card {
+    width: 300px;
+    background-color: rgb(177, 100, 100);
+    color: white;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 20px 0px;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.player-card:hover {
+    transform: translateY(-20px);
+}
+
+.player-card img {
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.player-position{
+    display: flex;
+}
+
+.player-position img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+
+.player-stats{
+    width: inherit;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.537);
+    padding: 10px 0px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.player-card:hover .player-stats{
+    opacity: 1;
+    bottom: 0;
+}
+
+.stats-table {
+    background-color: white;
+    width: 250px;
+    border-collapse: collapse;
+}
+
+table,
+th {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.stats-points {
+    border: 2px solid black;
+}
+
